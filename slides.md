@@ -4,6 +4,7 @@ author:
 	twitter: "@robknight_"
 controls: true
 theme: sudodoki/reveal-cleaver-theme
+output: index.html
 
 --
 
@@ -52,6 +53,9 @@ Links on the [https://hypothes.is]() homepage.
 
 * See all Public and Private annotations at [https://hypothes.is/stream]()
 * RSS feed also available
+```
+https://hypothes.is/stream.rss?uri.parts=bbc
+```
 
 --
 
@@ -61,7 +65,7 @@ Links on the [https://hypothes.is]() homepage.
 * Link to an annotated version of any web page:
 
 ```
-https://via.hypothes.is/<ORIGINAL URL>/
+https://via.hypothes.is/<URL>
 ```
 
 --
@@ -93,7 +97,7 @@ You can add Hypothesis to your own web pages.
 * If you serve the same content from multiple pages, include a link
   to the main URL.
 ```
-  <link rel="canonical" href="<CANONICAL URL>">
+  <link rel="canonical" href="http://yoursite.com/article.html">
 ```
 
 --
@@ -135,4 +139,6 @@ What else can you do with the API?
 
 * [Documentation site](h.readthedocs.org)
 * [Github](https://github.com/hypothesis)
+* [W3C Web Annotation Working Group](http://www.w3.org/annotation/)
 * Twitter - @hypothesis
+
