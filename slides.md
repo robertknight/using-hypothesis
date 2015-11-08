@@ -32,12 +32,19 @@ Links on the [https://hypothes.is]() homepage.
 
 * Install the [browser extension](https://chrome.google.com/webstore/detail/bjfhmglciegochdpefhhlphglcehbmek)+
 * Add the bookmarklet to your browser toolbar 
+* Enter the URL you want to annotate at [via.hypothes.is](https://via.hypothes.is)
 
 --
 
 * Go to any web page or PDF
 * Click the bookmarklet or extension icon to activate
 * Annotate!
+
+--
+
+* Make annotations public, private or shared with a private group
+* Add tags, images, lists, code etc. (Supports Markdown and LaTeX equations)
+* Reply to others' annotations and get notifications of replies
 
 --
 
@@ -83,17 +90,27 @@ You can add Hypothesis to your own web pages.
 * Does not work on local files (with `file:///`) URLs, you'll need
   to serve the app with a simple web server
 
+* If you serve the same content from multiple pages, include a link
+  to the main URL.
+```
+  <link rel="canonical" href="<CANONICAL URL>">
+```
+
 --
 
 ## Get data from Hypothes.is
 
 Hypothesis has an API. Get public annotations for any web page:
 
-`curl https://hypothes.is/api/search?url=<URL>`
+```
+curl https://hypothes.is/api/search?url=<URL>
+```
 
 Search for annotations:
 
-`curl https://hypothes.is/api/search?any=climate`
+```
+curl https://hypothes.is/api/search?any=climate
+```
 
 More documentation at [h.readthedocs.org](https://h.readthedocs.org)
 
