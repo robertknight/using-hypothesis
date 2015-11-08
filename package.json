@@ -1,0 +1,14 @@
+{
+  "name": "using-hypothesis",
+  "version": "1.0.0",
+  "description": "Slides for a brief talk on how to use Hypothesis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cleaver": "^0.7.4"
+  }
+}
